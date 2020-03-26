@@ -23,23 +23,26 @@ a {
 }
 
 .container {
-	width: 1170px;
+	width  : 1170px;
+	padding: 0px 15px;
 }
 
 /*header==================================*/
 .header {
 	display        : flex;
 	justify-content: center;
+	width          : 100%;
 }
 
 .header__content {
 	display        : flex;
 	justify-content: space-between;
 	align-items    : center;
-	width          : 100%;
 	min-height     : 60px;
 	color          : #fff;
 	padding        : 30px 0;
+	width          : 100%;
+	position       : relative;
 }
 
 .header__left {
@@ -66,17 +69,48 @@ a {
 }
 
 .menu ul li {
-	margin   : 0px 20px;
-	font-size: 14px;
+	display        : flex;
+	justify-content: center;
+	margin         : 0px 20px;
+	font-size      : 14px;
+}
+
+.header__right {
+	display        : flex;
+	justify-content: space-between;
+	width          : 100%;
+	position       : relative;
 }
 
 .header__right ul {
-	display: flex;
+	display        : flex;
+	justify-content: flex-end;
 }
 
 .header__right ul li {
 	margin-left: 20px;
 }
+
+.menu__spans {
+	display        : flex;
+	flex-direction : column;
+	align-items    : center;
+	justify-content: center;
+	width          : 40px;
+	height         : 40px;
+}
+
+.menu__spans span {
+	width           : 100%;
+	height          : 3px;
+	background-color: #fff;
+	margin          : 5px 0;
+}
+
+.header__menu_responsiv {
+	display: none;
+}
+
 
 /*/header==================================*/
 /*main=======================================*/
@@ -85,11 +119,19 @@ a {
 	flex-direction: column;
 	align-items   : center;
 	color         : #fff;
+	width         : 100%;
+}
+
+.description {
+	display        : flex;
+	justify-content: center;
+	width          : 100%;
 }
 
 .description__content {
 	display        : flex;
 	justify-content: space-between;
+	width          : 100%;
 }
 
 .description__left {
@@ -140,10 +182,10 @@ a {
 }
 
 .description__text {
-	min-height : 101px;
 	font-family: Roboto;
 	font-size  : 14px;
 	line-height: 150%;
+	width      : 100%;
 }
 
 .description__button {
@@ -168,10 +210,10 @@ a {
 }
 
 .description__right {
-	width          : 100%;
 	display        : flex;
 	justify-content: center;
 	align-items    : center;
+	width          : 100%;
 }
 
 .description__play {
@@ -183,6 +225,7 @@ a {
 	height          : 75px;
 	background-color: #9D2929;
 	border-radius   : 50%;
+	cursor          : pointer;
 }
 
 .description__play::before {
@@ -248,12 +291,14 @@ a {
 	background-color: #141218;
 	font-size       : 14px;
 	margin-top      : 100px;
+	width           : 100%;
 }
 
 .footer__content {
 	display        : flex;
 	justify-content: space-between;
 	align-items    : center;
+	width          : 100%;
 }
 
 .footer__right ul {
@@ -265,3 +310,123 @@ a {
 }
 
 /*/footer=======================================*/
+/*media break points=======================================*/
+@media screen and (max-width:576px) {
+	.description__right {
+		display: none;
+	}
+
+	.slide2 {
+		display: none;
+	}
+
+	.description__left {
+		width: 100%;
+	}
+
+	.header__right {
+		justify-content: flex-end;
+		flex-direction : column-reverse;
+		align-items    : flex-end;
+		padding        : 50px 15px 15px 15px;
+		position       : absolute;
+		right          : -15px;
+		top            : 0px;
+		z-index        : 1;
+	}
+
+	.header__solcial_media {
+		margin-top: 40px;
+	}
+
+	.menu {
+		margin: 10px;
+	}
+
+	.menu ul {
+		flex-direction: column;
+	}
+
+	.menu ul li,
+	.header__solcial_media li {
+		margin: 5px 0;
+	}
+
+	.header__right {
+		max-width       : 150px;
+		align-items     : center;
+		background-color: #9D2929;
+		display         : none;
+	}
+
+	.menu__active {
+		display: flex;
+	}
+
+	.menu__close {
+		width   : 40px;
+		height  : 40px;
+		position: relative;
+	}
+
+	.menu__close span:nth-child(2) {
+		transform: rotate(45deg);
+		position : absolute;
+	}
+
+	.menu__close span:nth-child(3) {
+		transform: rotate(-45deg);
+		position : absolute;
+	}
+
+	.menu__close span:first-child {
+		display: none;
+	}
+
+	.header__menu_responsiv {
+		z-index: 5;
+		display: flex;
+	}
+
+	.description__title h1 {
+		font-size: 50px;
+	}
+
+	.description__title span {
+		font-size: 65px;
+	}
+
+	.description__text {
+		width: 100%;
+	}
+
+	.description__text p {
+		font-size: 12px;
+	}
+
+	.description__button {
+		width : 200px;
+		height: 50px;
+	}
+
+	.footer__content {
+		flex-direction: column;
+		align-items   : flex-start;
+	}
+
+	.footer__content {
+		justify-content: flex-start;
+	}
+
+	.footer__content ul {
+		margin: 10px 0;
+	}
+
+	.footer__content ul li {
+		margin-right: 20px;
+		margin-left : 0px;
+	}
+
+}
+
+/*/media break points=======================================*/
