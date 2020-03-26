@@ -1,0 +1,267 @@
+* {
+	padding        : 0;
+	margin         : 0;
+	text-decoration: none;
+	list-style-type: none;
+	outline        : none;
+	font-family    : Arial, Helvetica, sans-serif;
+}
+
+a {
+	color: inherit;
+}
+
+.wrapper {
+	display          : flex;
+	align-items      : center;
+	flex-direction   : column;
+	width            : 100%;
+	min-height       : 600px;
+	background-image : url("images/backgroundbg.jpg");
+	background-repeat: no-repeat;
+	background-size  : cover;
+}
+
+.container {
+	width: 1170px;
+}
+
+/*header==================================*/
+.header {
+	display        : flex;
+	justify-content: center;
+}
+
+.header__content {
+	display        : flex;
+	justify-content: space-between;
+	align-items    : center;
+	width          : 100%;
+	min-height     : 60px;
+	color          : #fff;
+	padding        : 30px 0;
+}
+
+.header__left {
+	display    : flex;
+	align-items: center;
+}
+
+.logo {
+	width : 50px;
+	height: 36.6px;
+}
+
+.logo img {
+	width : 100%;
+	height: 100%;
+}
+
+.menu {
+	margin-left: 20px;
+}
+
+.menu ul {
+	display: flex;
+}
+
+.menu ul li {
+	margin   : 0px 20px;
+	font-size: 14px;
+}
+
+.header__right ul {
+	display: flex;
+}
+
+.header__right ul li {
+	margin-left: 20px;
+}
+
+/*/header==================================*/
+/*main=======================================*/
+.main {
+	display       : flex;
+	flex-direction: column;
+	align-items   : center;
+	color         : #fff;
+}
+
+.description__content {
+	display        : flex;
+	justify-content: space-between;
+}
+
+.description__left {
+	max-width: 458px;
+}
+
+.description__top {
+	display       : flex;
+	flex-direction: column;
+	align-items   : flex-start;
+}
+
+.description__assassment {
+	display    : flex;
+	align-items: center;
+	margin     : 10px 0;
+}
+
+.description__assassment ul {
+	display    : flex;
+	align-items: center;
+}
+
+.description__assassment ul li {
+	color    : #9D2929;
+	font-size: 18px;
+}
+
+.description__assassment p {
+	font-size : 12px;
+	margin    : 0px 10px;
+	margin-top: 3px;
+}
+
+.description__title {
+	font-family: Mason Chronicles;
+}
+
+.description__title h1 {
+	font-weight: 500;
+	font-size  : 50px;
+	line-height: 89px;
+	color      : #FFFFFF;
+}
+
+.description__title span {
+	font-size: 76px;
+}
+
+.description__text {
+	min-height : 101px;
+	font-family: Roboto;
+	font-size  : 14px;
+	line-height: 150%;
+}
+
+.description__button {
+	margin: 20px 0;
+}
+
+.description__button button {
+	padding         : 22px 72px;
+	width           : 260px;
+	height          : 60px;
+	background-color: #9D2929;
+	border-radius   : 8px;
+	border          : 1px solid #9D2929;
+	color           : #fff;
+	cursor          : pointer;
+}
+
+.description__slide {
+	display    : flex;
+	align-items: center;
+	margin     : 50px 0;
+}
+
+.description__right {
+	width          : 100%;
+	display        : flex;
+	justify-content: center;
+	align-items    : center;
+}
+
+.description__play {
+	position        : relative;
+	display         : flex;
+	justify-content : center;
+	align-items     : center;
+	width           : 75px;
+	height          : 75px;
+	background-color: #9D2929;
+	border-radius   : 50%;
+}
+
+.description__play::before {
+	content         : "";
+	position        : absolute;
+	width           : 100px;
+	height          : 100px;
+	background-color: #9D2929;
+	border-radius   : 50%;
+	opacity         : 0.5;
+}
+
+.description__play img {
+	position: relative;
+	right   : -3px;
+	width   : 30px;
+	height  : 30px;
+}
+
+.slide1,
+.slide2 {
+	width            : 164px;
+	height           : 113px;
+	background-repeat: no-repeat;
+	background-size  : cover;
+	display          : flex;
+	flex-direction   : column;
+	align-items      : flex-start;
+	justify-content  : flex-end;
+	margin-right     : 30px;
+}
+
+.slide1 p,
+.slide2 p {
+	padding    : 10px 10px 2px 10px;
+	font-size  : 10px;
+	line-height: 12px;
+}
+
+.slide1 b,
+.slide2 b {
+	padding    : 2px 10px 10px 10px;
+	font-weight: bold;
+	font-size  : 14px;
+}
+
+.slide1 {
+	background-image: url("images/card-image.png");
+}
+
+.slide2 {
+	background-image: url("images/card-image2.png");
+}
+
+/*/main=======================================*/
+/*footer=======================================*/
+.footer {
+	display         : flex;
+	justify-content : center;
+	align-items     : center;
+	min-height      : 60px;
+	color           : #727174;
+	background-color: #141218;
+	font-size       : 14px;
+	margin-top      : 100px;
+}
+
+.footer__content {
+	display        : flex;
+	justify-content: space-between;
+	align-items    : center;
+}
+
+.footer__right ul {
+	display: flex;
+}
+
+.footer__right ul li {
+	margin-left: 20px;
+}
+
+/*/footer=======================================*/
