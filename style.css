@@ -12,8 +12,15 @@ a {
 }
 
 .wrapper {
+	display          : -webkit-box;
+	display          : -ms-flexbox;
 	display          : flex;
+	-webkit-box-align      : center;
+	-ms-flex-align      : center;
 	align-items      : center;
+	-webkit-box-orient   : vertical;
+	-webkit-box-direction   : normal;
+	-ms-flex-direction   : column;
 	flex-direction   : column;
 	width            : 100%;
 	min-height       : 600px;
@@ -29,14 +36,24 @@ a {
 
 /*header==================================*/
 .header {
+	display        : -webkit-box;
+	display        : -ms-flexbox;
 	display        : flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	width          : 100%;
 }
 
 .header__content {
+	display        : -webkit-box;
+	display        : -ms-flexbox;
 	display        : flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
+	-webkit-box-align    : center;
+	-ms-flex-align    : center;
 	align-items    : center;
 	min-height     : 60px;
 	color          : #fff;
@@ -46,7 +63,11 @@ a {
 }
 
 .header__left {
+	display    : -webkit-box;
+	display    : -ms-flexbox;
 	display    : flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 }
 
@@ -65,25 +86,39 @@ a {
 }
 
 .menu ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
 .menu ul li {
+	display        : -webkit-box;
+	display        : -ms-flexbox;
 	display        : flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	margin         : 0px 20px;
 	font-size      : 14px;
 }
 
 .header__right {
+	display        : -webkit-box;
+	display        : -ms-flexbox;
 	display        : flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
 	width          : 100%;
 	position       : relative;
 }
 
 .header__right ul {
+	display        : -webkit-box;
+	display        : -ms-flexbox;
 	display        : flex;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
 	justify-content: flex-end;
 }
 
@@ -92,9 +127,18 @@ a {
 }
 
 .menu__spans {
+	display        : -webkit-box;
+	display        : -ms-flexbox;
 	display        : flex;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
 	flex-direction : column;
+	-webkit-box-align    : center;
+	-ms-flex-align    : center;
 	align-items    : center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	width          : 40px;
 	height         : 40px;
@@ -115,21 +159,36 @@ a {
 /*/header==================================*/
 /*main=======================================*/
 .main {
+	display       : -webkit-box;
+	display       : -ms-flexbox;
 	display       : flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-webkit-box-align   : center;
+	-ms-flex-align   : center;
 	align-items   : center;
 	color         : #fff;
 	width         : 100%;
 }
 
 .description {
+	display        : -webkit-box;
+	display        : -ms-flexbox;
 	display        : flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	width          : 100%;
 }
 
 .description__content {
+	display        : -webkit-box;
+	display        : -ms-flexbox;
 	display        : flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
 	width          : 100%;
 }
@@ -139,19 +198,34 @@ a {
 }
 
 .description__top {
+	display       : -webkit-box;
+	display       : -ms-flexbox;
 	display       : flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-webkit-box-align   : start;
+	-ms-flex-align   : start;
 	align-items   : flex-start;
 }
 
 .description__assassment {
+	display    : -webkit-box;
+	display    : -ms-flexbox;
 	display    : flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	margin     : 10px 0;
 }
 
 .description__assassment ul {
+	display    : -webkit-box;
+	display    : -ms-flexbox;
 	display    : flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 }
 
@@ -204,22 +278,38 @@ a {
 }
 
 .description__slide {
+	display    : -webkit-box;
+	display    : -ms-flexbox;
 	display    : flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	margin     : 50px 0;
 }
 
 .description__right {
+	display        : -webkit-box;
+	display        : -ms-flexbox;
 	display        : flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+	-webkit-box-align    : center;
+	-ms-flex-align    : center;
 	align-items    : center;
 	width          : 100%;
 }
 
 .description__play {
 	position        : relative;
+	display         : -webkit-box;
+	display         : -ms-flexbox;
 	display         : flex;
+	-webkit-box-pack : center;
+	-ms-flex-pack : center;
 	justify-content : center;
+	-webkit-box-align     : center;
+	-ms-flex-align     : center;
 	align-items     : center;
 	width           : 75px;
 	height          : 75px;
@@ -251,9 +341,18 @@ a {
 	height           : 113px;
 	background-repeat: no-repeat;
 	background-size  : cover;
+	display          : -webkit-box;
+	display          : -ms-flexbox;
 	display          : flex;
+	-webkit-box-orient   : vertical;
+	-webkit-box-direction   : normal;
+	-ms-flex-direction   : column;
 	flex-direction   : column;
+	-webkit-box-align      : start;
+	-ms-flex-align      : start;
 	align-items      : flex-start;
+	-webkit-box-pack  : end;
+	-ms-flex-pack  : end;
 	justify-content  : flex-end;
 	margin-right     : 30px;
 }
@@ -283,8 +382,14 @@ a {
 /*/main=======================================*/
 /*footer=======================================*/
 .footer {
+	display         : -webkit-box;
+	display         : -ms-flexbox;
 	display         : flex;
+	-webkit-box-pack : center;
+	-ms-flex-pack : center;
 	justify-content : center;
+	-webkit-box-align     : center;
+	-ms-flex-align     : center;
 	align-items     : center;
 	min-height      : 60px;
 	color           : #727174;
@@ -295,13 +400,21 @@ a {
 }
 
 .footer__content {
+	display        : -webkit-box;
+	display        : -ms-flexbox;
 	display        : flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
+	-webkit-box-align    : center;
+	-ms-flex-align    : center;
 	align-items    : center;
 	width          : 100%;
 }
 
 .footer__right ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -325,8 +438,15 @@ a {
 	}
 
 	.header__right {
+		-webkit-box-pack: end;
+		-ms-flex-pack: end;
 		justify-content: flex-end;
+		-webkit-box-orient : vertical;
+		-webkit-box-direction : reverse;
+		-ms-flex-direction : column-reverse;
 		flex-direction : column-reverse;
+		-webkit-box-align    : end;
+		-ms-flex-align    : end;
 		align-items    : flex-end;
 		padding        : 50px 15px 15px 15px;
 		position       : absolute;
@@ -344,6 +464,9 @@ a {
 	}
 
 	.menu ul {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
 	}
 
@@ -354,12 +477,16 @@ a {
 
 	.header__right {
 		max-width       : 150px;
+		-webkit-box-align     : center;
+		-ms-flex-align     : center;
 		align-items     : center;
 		background-color: #9D2929;
 		display         : none;
 	}
 
 	.menu__active {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 	}
 
@@ -370,11 +497,15 @@ a {
 	}
 
 	.menu__close span:nth-child(2) {
+		-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
 		transform: rotate(45deg);
 		position : absolute;
 	}
 
 	.menu__close span:nth-child(3) {
+		-webkit-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
 		transform: rotate(-45deg);
 		position : absolute;
 	}
@@ -385,6 +516,8 @@ a {
 
 	.header__menu_responsiv {
 		z-index: 5;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 	}
 
@@ -410,11 +543,18 @@ a {
 	}
 
 	.footer__content {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
+		-webkit-box-align   : start;
+		-ms-flex-align   : start;
 		align-items   : flex-start;
 	}
 
 	.footer__content {
+		-webkit-box-pack: start;
+		-ms-flex-pack: start;
 		justify-content: flex-start;
 	}
 
